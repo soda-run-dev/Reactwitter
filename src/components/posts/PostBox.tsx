@@ -13,7 +13,6 @@ interface PostBoxProps {
 }
 
 export default function PostBox({ post }: PostBoxProps) {
-  console.log("post", post);
   const { user } = useContext(AuthContext);
   const navigate = useNavigate();
 

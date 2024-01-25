@@ -23,7 +23,6 @@ export default function PostEditForm() {
       setPost({ ...(docSnap?.data() as PostProps), id: docSnap.id });
       setContent(docSnap?.data()?.content);
       setTags(docSnap?.data()?.hashTags);
-      console.log("first", docSnap.data());
     }
   }, [params.id]);
 
@@ -31,7 +30,6 @@ export default function PostEditForm() {
     e.preventDefault();
     try {
       if (post) {
-        console.log("hashTags", tags);
         const postRef = doc(db, "posts", post?.id);
         await updateDoc(postRef, {
           content: content,
