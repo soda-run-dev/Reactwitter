@@ -2,14 +2,14 @@ import { doc, onSnapshot } from "firebase/firestore";
 
 import Loader from "components/loader/Loader";
 import PostBox from "components/posts/PostBox";
-import { db } from "firebaseApp";
 import { PostProps } from "pages/home";
 import { useCallback, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { db } from "firebaseApp";
 
-import CommentBox, { CommentProps } from "components/comments/CommentBox";
-import CommentForm from "components/comments/CommentForm";
 import PostHeader from "components/posts/PostHeader";
+import CommentForm from "components/comments/CommentForm";
+import CommentBox, { CommentProps } from "components/comments/CommentBox";
 
 export default function PostDetail() {
   const params = useParams();
