@@ -9,8 +9,8 @@ body {
 }
 
 * {
-  background-color: $background;
-  color: $white;
+  background-color: $white;
+  color: $grayDark;
 }
 
 .layout {
@@ -61,7 +61,6 @@ body {
   max-width: 600px;
   margin: 0 auto;
   background-color: transparent;
-  color: $white;
 
   &__grid {
     display: grid;
@@ -151,10 +150,13 @@ body {
     width: 90% !important;
     font-size: 15px;
     font-weight: 600;
+    &::placeholder {
+      color: white;
+    }
 
     &:focus {
-      border: 1px solid $primaryColor;
-      background-color: $activeBg;
+      border: 1px solid $activeBg;
+      background-color: $white;
     }
   }
 
