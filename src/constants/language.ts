@@ -151,6 +151,30 @@ const TRANSLATIONS = {
     ko: "로그인하기",
     en: "Login",
   },
+  SUCCESS_SIGNUP: {
+    ko: "축하합니다. 회원가입이 되었습니다.",
+    en: "Successfully signed up.",
+  },
+  SUCCESS_LOGIN: {
+    ko: "로그인이 되었습니다.",
+    en: "Successfully logged in.",
+  },
+  INVALID_EMAIL: {
+    ko: "이메일 형식이 올바르지 않습니다.",
+    en: "Invalid email format.",
+  },
+  INVALID_PASSWORD: {
+    ko: "비밀번호는 8자리 이상 입력해주세요.",
+    en: "Password must be at least 8 characters.",
+  },
+  INVALID_PASSWORD_CHECK: {
+    ko: "비밀번호와 비밀번호 확인 값이 다릅니다.",
+    en: "Password and confirm password are different.",
+  },
+  SUCCESS_LOGOUT: {
+    ko: "로그아웃 되었습니다.",
+    en: "Successfully logged out.",
+  },
 };
 
 export default TRANSLATIONS;
