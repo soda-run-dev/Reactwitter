@@ -11,6 +11,7 @@ body {
 * {
   background-color: $white;
   color: $grayDark;
+  font-weight: 600;
 }
 
 .layout {
@@ -151,7 +152,7 @@ body {
     font-size: 15px;
     font-weight: 600;
     &::placeholder {
-      color: white;
+      color: $white;
     }
 
     &:focus {
@@ -195,6 +196,7 @@ body {
     &:hover,
     &:focus {
       background-color: $activeBg;
+      color: $white;
     }
   }
 }
@@ -229,6 +231,7 @@ body {
     gap: 16px;
   }
 
+  //?
   &__clear-btn {
     @extend .button;
     padding: 0.2rem 0.8rem;
@@ -237,6 +240,7 @@ body {
     &:hover,
     &:focus {
       background-color: $dangerDark;
+      color: white;
     }
   }
 
@@ -321,6 +325,7 @@ body {
     @extend .button;
     padding: 0.5rem 1rem;
     background-color: $primaryColor;
+    color: $white;
   }
 }
 
@@ -371,6 +376,7 @@ body {
   &__follow-btn {
     @extend .button;
     background-color: $white;
+    border: 1px solid $activeBorder;
     color: $activeBorder;
 
     &:hover,
@@ -388,6 +394,7 @@ body {
     &:hover,
     &:focus {
       background-color: $white;
+      border: 1px solid $activeBorder;
       color: $activeBorder;
     }
   }
@@ -438,33 +445,39 @@ body {
 
         &.post__delete {
           background-color: $danger;
+          color: $white;
 
           &:hover,
           &:focus {
             background-color: $dangerDark;
+            color: $white;
           }
         }
 
         &.post__edit {
           background-color: $gray;
+          color: $white;
 
           a {
             background-color: transparent;
+            color: $white;
           }
 
           &:hover,
           &:focus {
             background-color: $grayDark;
+            color: $white;
           }
         }
 
         &.post__likes,
         &.post__comments {
           @extend .post__flex;
+          border: 1px solid $grayText;
 
           &:hover,
           &:focus {
-            color: $gray;
+            color: $activeBg;
           }
         }
       }
@@ -518,6 +531,8 @@ body {
 
     &:hover,
     &:focus {
+      opacity: 0.5;
+
       background-color: $activeBorder;
     }
   }
@@ -547,12 +562,15 @@ body {
   &__btn--google {
     @extend .form__btn--submit;
     background-color: $white;
-    color: $activeBorder;
+    color: $grayText;
+    border: 1px solid $grayText;
 
     &:hover,
     &:focus {
-      background-color: $activeBorder;
+      opacity: 0.5;
+
       color: $white;
+      border: 0px;
     }
   }
 
@@ -590,20 +608,24 @@ body {
 
   &__btn {
     @extend .button;
-    background-color: $primaryColor;
+    color: $primaryColor;
+    border: 1px solid $primaryColor;
 
     &:hover,
     &:focus {
       background-color: $activeBorder;
+      color: $white;
     }
 
     &--language {
       @extend .button;
       background-color: $gray;
+      color: $white;
 
       &:hover,
       &:focus {
         background-color: $grayDark;
+        color: $white;
       }
     }
   }
@@ -615,7 +637,7 @@ body {
 
   &__name {
     font-size: 16px;
-    color: $white;
+    color: $grayDark;
     font-weight: 700;
     margin-bottom: 4px;
   }
