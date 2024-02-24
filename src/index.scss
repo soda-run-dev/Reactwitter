@@ -231,11 +231,11 @@ body {
     gap: 16px;
   }
 
-  //?
   &__clear-btn {
     @extend .button;
     padding: 0.2rem 0.8rem;
     background-color: $danger;
+    color: white;
 
     &:hover,
     &:focus {
